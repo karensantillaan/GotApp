@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>GotApp</title>
+		<meta charset="utf-8" />
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<span class="logo"><img src="images/logo.jpg" alt=""/></span>
+						<h1>GotApp</h1>
+						<p>En busca de un mayor ahorro económico para tu familia.</p>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#intro" class="active">Acerca de nosotros</a></li>
+							<li><a href="#first">Registro Legal</a></li>
+							<li><a href="#second">Localización</a></li>
+							<li><a href="#cta">Comentarios</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Introduction -->
+							<section id="intro" class="main">
+								<div class="spotlight">
+									<div class="content">
+										<header class="major">
+											<h2>Acerca de nosotros</h2>
+										</header>
+										<p>Somos una aplicación que busca el ahorro de las familias Hermosillenses a causa del alza de los combustibles y la inconformidad del pueblo de México del aumento de los precios de los combustibles.<br/>
+											Somos una empresa ética que busca que las familias Hermosillenses puedan ahorrar y elegir a su mejor proveedor de combustible en términos de precio y confiabilidad.<br/>
+											La idea de creación de GotApp fue en buscar el menor precio de los combustibles y sobre todo confiable aprovechando la liberación de los precios de las gasolinas (esto se refiere a que cada estación de servicio fijará su propio precio de venta). Pero ¿Cómo se sabe si la estación de servicio es confiable? de esta manera surgió la idea de ver los problemas legales que ha tenido la gasolinera, calificación del servicio de los clientes y comentarios personales de la estación de servicio.
+											De esta manera deseamos que la familia hermosillense pueda aprovechar eficientemente las nuevas tecnologías en busca de un mayor ahorro económico.</p>
+									</div>
+									<span class="image"><img src="images/logo.png" alt="" width="50%"/></span>
+								</div>
+							</section>
+
+						<!-- First Section -->
+							<section id="first" class="main special">
+								<header class="major">
+									<h2>Registro Legales de las Bombas</h2>
+								</header>
+								<ul class="statistics">
+									<li class="style1">
+										<span><img src="images/fuel.png" alt="" width="25%"></span>
+										<strong>$16.06</strong> Magna
+									</li>
+									<li class="style2">
+										<span><img src="images/fuel_station.png" alt="" width="25%"></span>
+										<strong>$18.40</strong> Premium
+									</li>
+									<li class="style3">
+										<span><img src="images/gas.png" alt="" width="25%"></span>
+										<strong>17.48</strong> Diesel
+									</li>
+								</ul>
+								<ul class="features">
+									<li>
+										<span class="icon major style1 fa-exclamation-triangle"></span>
+										<!-- <h3></h3> -->
+										<p>La pantalla no muestra la información requerida por la norma.<br/>
+											<i>(2 de Abril 2017, Corregido 9 de Abril 2017)</i>.</p>
+									</li>
+									<li>
+										<span class="icon major style3 fa-ban"></span>
+										<!-- <h3></h3> -->
+										<p>Cuenta con componentes ajenos a los aprobados.<br/>
+											<i>(1 de Abril 2017, Corregido 16 de Abril 2017)</i></p>
+									</li>
+								</ul>
+							</section>
+
+						<!-- Second Section -->
+							<section id="second" class="main">
+								<script>
+						    	function initMap() {
+						    		var myLatLng = {lat: 29.101491883969437, lng: -110.99263072013855};
+
+						    		var map = new google.maps.Map(document.getElementById('map'), {
+						    			zoom: 15,
+						    			center: myLatLng
+						    		});
+
+						    		var marker = new google.maps.Marker({
+						    			position: myLatLng,
+						    			map: map,
+						    			title: 'Hello World!'
+						    		});
+						    	}
+						    </script>
+						    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZ2IkyPtX1EXg4tvSf4X6y6H2AGfCaT5E&callback=initMap">
+						    </script>
+						  <br><br><br>
+						  <div id="map" style="padding-left: 0px;"></div>
+						  <br><br>
+							</section>
+
+						<!-- Get Started -->
+							<section id="cta" class="main special">
+								<header class="major">
+									<h2>Comentarios</h2>
+									<form method="post" action="#">
+										<div class="row uniform">
+											<div class="6u 12u$(xsmall)">
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+											</div>
+											<div class="6u$ 12u$(xsmall)">
+												<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+											</div>
+											<div class="12u$">
+												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+											</div>
+											<div class="12u$">
+												<ul class="actions">
+													<li><input type="submit" value="Enviar" /></li>
+												</ul>
+											</div>
+										</div>
+									</form>
+								</header>
+							</section>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<!-- <h2>¡Contáctanos!</h2>
+							<dl class="alt">
+								<dt>Dirección</dt>
+								<dd>Ave. Tecnológico y Periférico Poniente S/n, Sahuaro, 83170 &bull; Hermosillo, Son.</dd>
+								<dt>Teléfono</dt>
+								<dd>(000) 000-0000 x 0000</dd>
+								<dt>Correo</dt>
+								<dd><a href="#">information@untitled.tld</a></dd>
+							</dl> -->
+							<!-- <ul class="icons">
+								<li><a href="#" class="icon fa-twitter alt"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon fa-facebook alt"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon fa-instagram alt"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon fa-github alt"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+							</ul> -->
+						</section>
+						<p class="copyright">&copy; Diseño: <a href="#">GotApp</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
