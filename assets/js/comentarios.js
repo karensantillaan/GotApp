@@ -12,6 +12,8 @@ $(document).ready(function(){
         "<p>"+coment+"<br>  <letra style='font-size:16px;'> -"+fecha+"<letra></p>"+
         "</div>";
       $("#comentarios").append(cc)
+      $("#cnombre").val("")
+      $("#ccomentario").val("")
     }else{
       alert('Todos los campos son requeridos para comentar')
     }
