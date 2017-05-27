@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>GotApp</title>
+		<meta charset="utf-8" />
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+  <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 90%;
+        overflow: none !important;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  <body>
+    <!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Header -->
+					<header id="header" class="alt">
+						<a href="index.html"><span class="logo"><img src="images/logo.jpg" width="100px"/></span></a>
+						<h2>GotApp</h2>
+						<p>En busca de un mayor ahorro económico para tu familia.</p>
+					</header>
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#first">Registro Legal</a></li>
+							<li><a href="#second">Localización</a></li>
+							<li><a href="#cta">Comentarios</a></li>
+							<li><a href="#intro" class="active">Acerca de nosotros</a></li>
+						</ul>
+					</nav>
+				<!-- Main -->
+					<div id="main">
+						<!-- First Section -->
+							<section id="first" class="main special">
+								<h1>RENDICHICAS <br>Gasolineras </h1>
+
+								<header class="major">
+									<h2>Registro Legales de las Bombas</h2>
+								</header>
+								<ul class="statistics">
+									<li class="style1">
+										<span><img src="images/fuel.png" alt="" width="25%"></span>
+										<strong>$15.46</strong> Magna
+									</li>
+									<li class="style2">
+										<span><img src="images/fuel_station.png" alt="" width="25%"></span>
+										<strong>$17.85</strong> Premium
+									</li>
+									<li class="style3">
+										<span><img src="images/gas.png" alt="" width="25%"></span>
+										<strong>17.03</strong> Diesel
+									</li>
+								</ul>
+								<ul class="features">
+									<li>
+										<span class="icon major style1 fa-exclamation-triangle"></span>
+										<!-- <h3></h3> -->
+										<p>Falla eléctrica en pantalla de despacho.<br/>
+											<i>(10 de Abril 2017, Corregido 12 de Abril 2017)</i>.</p>
+									</li>
+									<li>
+										<span class="icon major style3 fa-ban"></span>
+										<!-- <h3></h3> -->
+										<p>Fuga Detectada.<br/>
+											<i>(7 de Abril 2017, Corregido 8 de Abril 2017)</i></p>
+									</li>
+								</ul>
+								<br>
+								<div id="second">
+									<header class="major">
+										<h2>Localización</h2>
+									</header>
+								</div>
+							</section>
+						</div>
+					</div>
+
+
+		<!--  MAPAAA!!  -->
+    <script>
+      function initMap() {
+        var myLatLng = {lat: 29.094457, lng: -110.993028};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: myLatLng
+        });
+
+				var nombre_g ='<h2 style="color:black;">Rendichicas Gasolineras</h2>';
+
+
+				var infowindow = new google.maps.InfoWindow({
+          content: nombre_g
+        });
+
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,          
+        });
+				infowindow.open(map, marker);
+      }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZ2IkyPtX1EXg4tvSf4X6y6H2AGfCaT5E&callback=initMap"></script>
+		<div id="map" style="padding-left: 0px;"></div>
+		<!--  MAPAAA!!  -->
+		<div id="wrapper">
+			<div id="main">
+				<nav id="nav">
+					<ul>
+						<li><a href="#first">Registro Legal</a></li>
+						<li><a href="#second">Localización</a></li>
+						<li><a href="#cta">Comentarios</a></li>
+						<li><a href="#intro" class="active">Acerca de nosotros</a></li>
+					</ul>
+				</nav>
+				<section id="cta" class="main special">
+					<header class="major">
+						<h2>Comentarios</h2>
+						<div id="comentarios" style="text-align:left;">
+							<div>
+								<h3><b>David Robles:</b></h3>
+								<p>Yo antes recargaba en esta gasolinera hasta que empezaron a robar mucho, no me duraba nada y mejor deje de ir. <br> - <letra style="font-size:16px;">Sat May 26 2017 00:19:36 GMT+0000 (UTC)<letra></p>
+							</div>
+							<div>
+								<h3><b>Jorge Rios:</b></h3>
+								<p>Pues es como cualquier otra gasolinera, no roban tanto, pero tampoco te hechan lo que deben, si no hay mas pues, pueden ir ahi. <br> - <letra style="font-size:16px;">Sat May 27 2017 00:20:44 GMT+0000 (UTC)<letra></p>
+							</div>
+						</div>
+						<form method="post" action="#">
+							<div class="row uniform">
+								<div class="6u 12u$(xsmall)">
+									<input type="text" name="demo-name" id="cnombre" value="" placeholder="Nombre"required />
+								</div>
+								<div class="12u$">
+									<textarea name="demo-message" id="ccomentario" placeholder="Comentario" rows="6" required></textarea>
+								</div>
+								<div class="12u$">
+									<ul class="actions">
+										<li><input type="button" value="Comentar" id="comentar" /></li>
+									</ul>
+								</div>
+							</div>
+						</form>
+					</header>
+				</section>
+				<section id="intro" class="main">
+					<div class="spotlight">
+						<div class="content">
+							<header class="major">
+								<h2>Acerca de nosotros</h2>
+							</header>
+							<p>Somos una aplicación que busca el ahorro de las familias Hermosillenses a causa del alza de los combustibles y la inconformidad del pueblo de México del aumento de los precios de los combustibles.<br/>
+								Somos una empresa ética que busca que las familias Hermosillenses puedan ahorrar y elegir a su mejor proveedor de combustible en términos de precio y confiabilidad.<br/>
+								La idea de creación de GotApp fue en buscar el menor precio de los combustibles y sobre todo confiable aprovechando la liberación de los precios de las gasolinas (esto se refiere a que cada estación de servicio fijará su propio precio de venta). Pero ¿Cómo se sabe si la estación de servicio es confiable? de esta manera surgió la idea de ver los problemas legales que ha tenido la gasolinera, calificación del servicio de los clientes y comentarios personales de la estación de servicio.
+								De esta manera deseamos que la familia hermosillense pueda aprovechar eficientemente las nuevas tecnologías en busca de un mayor ahorro económico.</p>
+						</div>
+						<span class="image"><img src="images/logo.png" alt="" width="50%"/></span>
+					</div>
+				</section>
+			</div>
+			<!-- Footer -->
+			<footer id="footer">
+				<section>
+
+				</section>
+				<p class="copyright">&copy; Diseño: <a href="#">GotApp</a>.</p>
+			</footer>
+		</div>
+
+  </body>
+  <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="assets/js/main.js"></script>
+		<script src="assets/js/comentarios.js"></script>
+</html>

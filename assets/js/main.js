@@ -19,7 +19,8 @@
 
 		var	$window = $(window),
 			$body = $('body'),
-			$main = $('#main');
+			$main = $('#main'),
+			$body2 = $('#cta');
 
 		// Disable animations/transitions until the page has loaded.
 			$body.addClass('is-loading');
@@ -57,6 +58,15 @@
 								$nav.removeClass('alt');
 							},
 						});
+					$body2.scrollex({
+						mode: 'top',
+						enter: function() {
+							$nav.addClass('alt');
+						},
+						leave: function() {
+							$nav.removeClass('alt');
+						},
+					});
 
 				// Links.
 					var $nav_a = $nav.find('a');
