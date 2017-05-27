@@ -2226,7 +2226,7 @@
 	select,
 	textarea {
 		background: rgba(255, 255, 255, 0.075);
-		border-color: rgba(255, 255, 255, 0.35);
+		border-color: #ef5c26;
 	}
 
 		input[type="text"]:focus,
@@ -2234,7 +2234,7 @@
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #8cc9f0;
+			border-color: #ef5c26;
 			box-shadow: 0 0 0 1px #8cc9f0;
 		}
 
@@ -2351,6 +2351,7 @@
 		}
 
 		.icon.style2 {
+
 			color: #c79cc8;
 		}
 
@@ -2915,11 +2916,11 @@
 		}
 
 			.statistics li.style1 {
-				background-color: red;
+				background-color: green;
 			}
 
 			.statistics li.style2 {
-				background-color: green;
+				background-color: red;
 			}
 
 			.statistics li.style3 {
